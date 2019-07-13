@@ -1,0 +1,40 @@
+import pandas as pd
+import numpy as np
+
+def AnnieAmandaDataClean(candidateSummaryAction):
+    candidateSummaryAction['ind_ite_con'] = pd.to_numeric(candidateSummaryAction['ind_ite_con'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['ind_uni_con'] = pd.to_numeric(candidateSummaryAction['ind_uni_con'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['ind_con'] = pd.to_numeric(candidateSummaryAction['ind_con'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['par_com_con'] = pd.to_numeric(candidateSummaryAction['par_com_con'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['oth_com_con']= pd.to_numeric(candidateSummaryAction['oth_com_con'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['can_con'] = pd.to_numeric(candidateSummaryAction['can_con'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['tot_con'] = pd.to_numeric(candidateSummaryAction['tot_con'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['tra_fro_oth_aut_com'] = pd.to_numeric(candidateSummaryAction['tra_fro_oth_aut_com'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['can_loa'] = pd.to_numeric(candidateSummaryAction['can_loa'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['oth_loa'] = pd.to_numeric(candidateSummaryAction['oth_loa'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['tot_loa'] = pd.to_numeric(candidateSummaryAction['tot_loa'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['off_to_ope_exp'] = pd.to_numeric(candidateSummaryAction['off_to_ope_exp'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['off_to_fun'] = pd.to_numeric(candidateSummaryAction['off_to_fun'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['off_to_leg_acc'] = pd.to_numeric(candidateSummaryAction['off_to_leg_acc'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['oth_rec'] = pd.to_numeric(candidateSummaryAction['oth_rec'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['tot_rec'] = pd.to_numeric(candidateSummaryAction['tot_rec'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['ope_exp'] = pd.to_numeric(candidateSummaryAction['ope_exp'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['exe_leg_acc_dis'] = pd.to_numeric(candidateSummaryAction['exe_leg_acc_dis'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['tra_to_oth_aut_com'] = pd.to_numeric(candidateSummaryAction['tra_to_oth_aut_com'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['can_loa_rep'] = pd.to_numeric(candidateSummaryAction['can_loa_rep'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['tot_loa_rep'] = pd.to_numeric(candidateSummaryAction['tot_loa_rep'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['ind_ref'] = pd.to_numeric(candidateSummaryAction['ind_ref'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['par_com_ref'] = pd.to_numeric(candidateSummaryAction['par_com_ref'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['oth_com_ref'] = pd.to_numeric(candidateSummaryAction['oth_com_ref'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['tot_con_ref'] = pd.to_numeric(candidateSummaryAction['tot_con_ref'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['oth_dis'] = pd.to_numeric(candidateSummaryAction['oth_dis'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['tot_dis'] = pd.to_numeric(candidateSummaryAction['tot_dis'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['cas_on_han_beg_of_per'] = pd.to_numeric(candidateSummaryAction['cas_on_han_beg_of_per'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['cas_on_han_clo_of_per'] = pd.to_numeric(candidateSummaryAction['cas_on_han_clo_of_per'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['net_con'] = pd.to_numeric(candidateSummaryAction['net_con'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['net_ope_exp'] = pd.to_numeric(candidateSummaryAction['net_ope_exp'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['deb_owe_by_com'] = pd.to_numeric(candidateSummaryAction['deb_owe_by_com'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+    candidateSummaryAction['deb_owe_to_com'] = pd.to_numeric(candidateSummaryAction['deb_owe_to_com'].str.replace("$","").str.replace(",","").str.replace("(","-").str.replace(")",""))
+
+    return candidateSummaryAction
+
