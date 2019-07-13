@@ -1,0 +1,53 @@
+﻿Tag,Field Name,Data Type,Description,Range,Explanation
+lin_ima,Link to list of reports for the committee,URI,List of all disclosure filings for this committee,,Link to list of filings made directly by the candidate - mainly statements of candidacy for each election
+can_id,Candidate Id,Character,,9 characters,"First character indicates office sought - H=House, S=Senate, P=Presidential. Columns 3-4 are the state abbreviation for Congressional candidates"
+can_nam,Candidate Name,Character,Name of candidate,Max 90 characters,
+can_off,Candidate Office,Text,office abbreviation,1 character,P=President; S=Senate; H=House
+can_off_sta,Candidate Office State,Character,Postal abbreviation for state,2 characters,
+can_off_dis,Candidate Office District,Number,District number for House candidates,2 digits,
+can_par_aff,Candidate Party Affiliation,Character,Party abbreviation,3 characters,Dem=Democrat
+,,,,,Rep=Republican
+,,,,,full list of Party affiliations
+can_inc_cha_ope_sea,Candidate Incumbent Challenger Open Seat,Character,Incumbent or challenger or open seat indicator,10 characters,I=incumbent; C=challenger; O=open seat (where no incumbent sought reelection)
+can_str1,Candidate Street 1,Text,Street address,,Provided by the candidate on a statement of candidacy
+can_str2,Candidate Street 2,Text,,,Generally suite number or other secondary address
+can_cit,Candidate City,Text,City of mailing address,,Note: mailing addresses are not necessarily within the district. Use Candidate Office State and Candidate Office District to specify the location of a campaign
+can_sta,Candidate State,Text,State of mailing address,,
+can_zip,Candidate Zip,Number,Zip code of mailing address,5 digits,
+ind_ite_con,Individual Itemized Contribution,Currency,Sum of itemized contributions from individuals,,Contributions must be itemized (i.e. listing specific information about the donor and the contribution) when the total given to the campaign from a single individual exceeds $200.
+ind_uni_con,Individual Unitemized Contribution,Currency,Sum of unitemized contributions from individuals,,Total given to the campaign where specific information about the donors is not required because they have not given more than $200
+ind_con,Individual Contribution,Currency,Total contributions from individuals,,Sum of the previous two fields (i.e. ind_ite_con and ind_uni_con)
+par_com_con,Party Committee Contribution,Currency,Contributions from party committees,,These must be itemized regardless of amount
+oth_com_con,Other Committee Contribution,Currency,Contributions from other committees,,"Mostly contributions from PACs, also includes contributions from other candidates. These also must be itemized regardless of amount"
+can_con,Candidate Contribution,Currency,Contributions from the candidate him(her)self,,
+tot_con,Total Contribution,Currency,Total contributions,,"Sum of the previous 4 fields (i.e. ind_con, par_com_con, oth_com_con and can_con)"
+tra_fro_oth_aut_com,Transfer from other Authorized Committee,Currency,,,Candidates may have more than one committee working for their election (including jointfundraising committees). Transfers from others within the set appear here
+can_loa,Candidate Loan,Currency,Loans received from the candidate,,
+oth_loa,Other Loan,Currency,Other loans,,"Often from banks, but must be made in the normal course of business including interest rates and collateral. Loans from individuals are treated as contributions"
+tot_loa,Total Loan,Currency,,,Sum of the previous 2 fields (i.e. can_loa and oth_loa)
+off_to_ope_exp,Offsets to Operating Expenditure,Currency,,,"e.g. refund of deposit for phone bank, etc."
+off_to_fun,Offsets to Fundraising,Currency,,,Applies only for Presidential candidates receiving public matching funds in the primaries
+off_to_leg_acc,Offsets to Legal Accounting,Currency,,,Applies only for Presidential candidates receiving public matching funds in the primaries
+oth_rec,Other Receipts,Currency,,,"e.g. interest on bank deposits, capital gains, etc."
+tot_rec,Total Receipts,Currency,,,Sum of all receipt categories
+ope_exp,Operating Expenditure,Currency,,,Total of normal operating expenditures. These must also be itemized when payments to a specific vendor exceed $200
+exe_leg_acc_dis,Exempt Legal Accounting Disbursement,Currency,,,Applies only for Presidential candidates receiving public matching funds in the primaries
+fun_dis,Fundraising Disbursement,Currency,,,Applies only for Presidential candidates receiving public matching funds in the primaries
+tra_to_oth_aut_com,Transfer to Other Authorized Committee,Currency,,,Candidates may have more than one committee working for their election (including jointfundraising committees). Transfers to others within the set appear here
+can_loa_rep,Candidate Loan Repayment,Currency,Loan repayments to the candidate,,
+oth_loa_rep,Other Loan Repayment,Currency,Loan repayments to banks or others,,
+tot_loa_rep,Total Loan Repayment,Currency,,,Sum of the previous 2 fields (i.e. can_loa_rep and oth_loa_rep)
+ind_ref,Individual Refund,Currency,Contribution refunds made to individuals,,
+par_com_ref,Party Committee Refund,Currency,Contribution refunds made to parties,,
+oth_com_ref,Other Committee Refund,Currency,Contribution refunds made to other committees,,Mainly PACs or other candidates
+tot_con_ref,Total Contribution Refund,Currency,,,"Sum of the previous 3 fields (i.e. ind_ref, par_com_ref and oth_com_ref)"
+oth_dis,Other Disbursement,Currency,,,"e.g. donations to charity, contributions to state or local candidates, etc."
+tot_dis,Total Disbursement,Currency,,,Sum of all disbursement categories
+cas_on_han_beg_of_per,Cash on Hand Beginning of Period,Currency,,,Cash balance for the campaign at the start of the two-year period
+cas_on_han_clo_of_per,Cash on Hand Close of Period,Currency,,,Ending cash balance on the most recent filing
+net_con,Net Contribution,Currency,,,Sum of all contributions minus any contribution refunds
+net_ope_exp,Net Operating Expenditure,Currency,,,Sum of all operating expenditures minus any offsets to those expenditures
+deb_owe_by_com,Debt Owed by Committee,Currency,,,
+deb_owe_to_com,Debt Owed to Committee,Currency,,,
+cov_sta_dat,Coverage Start Date,Date,MM/DD/YYYY,,Beginning date for the first report during the two year period
+cov_end_dat,Coverage End Date,Date,MM/DD/YYYY,,Ending date of the most recent report
