@@ -11,8 +11,7 @@ During this project we will answer the following questions:
 How much of an impact does campaign spending and fundraising have on an election? 
 Is the impact greater in certain areas?
 Given this dataset, to what degree of accuracy could we have predicted the election results?
-Bonus:
-In order to win a political campaign, how much money should you spend? (What is the amount you need to win without overspending)
+
 
 We will be using the following datasets to prove our hypotheses:
 https://www.kaggle.com/danerbland/electionfinance
