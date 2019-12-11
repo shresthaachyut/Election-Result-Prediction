@@ -19,4 +19,3 @@ https://www.kaggle.com/danerbland/electionfinance
 Task Assignment:
 https://docs.google.com/document/d/1igv3hUT3Xte3jZbACHt_jnFvxb1RoA8kLjf4e7Bhneo/edit?usp=sharing
 
-Hi :)
