@@ -2,8 +2,6 @@ UofTSTG201905DATA3 Project #1
 
 Political Campaign Costs vs. Success
 
-By Annie, Amanda, Kiran, & Achyut
-
 
 Within this project we will be diving into the correlation between how much money a political campaign spends, as well as how and why this will affect the campaign’s outcome.
 
