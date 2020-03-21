@@ -1,5 +1,3 @@
-UofTSTG201905DATA3 Project #1
-
 Political Campaign Costs vs. Success
 
 
